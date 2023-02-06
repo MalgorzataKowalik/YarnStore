@@ -1,0 +1,67 @@
+@import "../../utils/styles.module.css";
+
+.button {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    background-color: var(--main-color-hue2);
+    color: white;
+    padding: 0.75rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .button:hover,
+  .button:active {
+    background-color: var(--main-color-hue1);
+  }
+  
+  .icon-container {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+
+  .icon {
+    fill: white;
+    font-size: 1.35rem;
+    margin-right: 0.5rem;
+  }
+  
+  .amount {
+    background-color: var(--main-color-hue3);
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  
+  .button:hover .amount,
+  .button:active .amount {
+    background-color: var(--main-color-hue2);
+  }
+  
+  .bump {
+    animation: bump 300ms ease-out;
+  }
+  
+  @keyframes bump {
+    0% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
